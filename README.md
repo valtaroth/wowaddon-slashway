@@ -1,0 +1,19 @@
+# SlashWay
+
+The game supports native waypoints but most online resources only provide waypoint commands for the most popular navigation addons like TomTom. This addon adds a command using the same format but creates a simple waypoint using the game's native built-in system.
+
+# Usage
+
+```
+/way #mapid x y [description]
+```
+
+Enter a valid `/way` command using the common TomTom-style format in chat to create a native waypoint at the specified location.
+
+For example, the command `/way #630 56.6 66.6 Calamir` will create a waypoint at the world boss Calamir in Azsuna as reported on Wowhead.
+
+Since the description isn't actually used in the waypoint it is optional. The main reason it is supported is to allow copying these common commands from online resources without needing to make any adjustments.
+
+# Known limitations
+
+* Since the game offers no native way of translating a map or zone name to its id, commands like `/way Azsuna 56.6 66.6 Calamir` are currently not supported.
