@@ -1,0 +1,8 @@
+## Interface: 110205, 110207, 120000
+## Title: SlashWay
+## Author: Valtaroth
+## Notes: SlashWay adds the "/way #mapid x y description" command to place native waypoints using TomTom-compatible format.
+## IconTexture: 450905
+## Version: v0.1.0
+
+SlashWay.lua
