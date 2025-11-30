@@ -43,7 +43,11 @@ local function SlashWay(msg, editbox)
     C_Map.SetUserWaypoint(point)
     C_SuperTrack.SetSuperTrackedUserWaypoint(true)
 
-    printInfo('Placed waypoint for ' .. argName .. ' on map ' .. map.name .. ' at coordinates (' .. x .. '/' .. y .. ').')
+    if argName == nil or argName == '' then
+        printInfo('Placed waypoint on map #' .. mapID .. ' (' .. map.name .. ') at coordinates (' .. x .. '/' .. y .. ').')
+    else
+        printInfo('Placed waypoint ' .. argName .. ' on map #' .. mapID .. ' (' .. map.name .. ') at coordinates (' .. x .. '/' .. y .. ').')
+    end
 end
 
 SLASH_SLASHWAY1 = '/way'
