@@ -12,7 +12,12 @@ local function SlashWay(msg, editbox)
     -- msg will be split into [mapID, x, y, anything else (for TomTom commands usually a name)]
     local argMapID, argX, argY, argDesc = strsplit(" ", msg, 4)
     
-    local mapID = tonumber(strtrim(argMapID, "#"))
+    local mapID = ""
+    if argMapID == "here" then
+        mapID = C_Map.GetBestMapForUnit("player")
+    else
+        mapID = tonumber(strtrim(argMapID, "#"))
+    end
     if mapID == nil then
         printError('Failed to place waypoint for invalid map id "' .. argMapID .. '"!')
         return
