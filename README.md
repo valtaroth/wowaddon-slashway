@@ -22,6 +22,10 @@ Since the description isn't actually used in the waypoint it is optional. The ma
 
 # Changelog
 
+## v0.1.2
+
+* Bumped supported version to 12.0.1
+
 ## v0.1.1
 
 * Fixed installation archive
