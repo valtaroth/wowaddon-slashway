@@ -34,6 +34,10 @@ Since the description isn't actually used in the waypoint it is optional. The ma
 
 # Changelog
 
+## v0.1.4
+
+* Bumped supported game version to Retail v12.1.7 and Forever v1.60.1
+
 ## v0.1.3
 
 * Bumped supported version to 12.1.5
